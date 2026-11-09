@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Ojeto</title>
+    <!-----Boostrap----->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <!-----Iconos----->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-----CSS----->
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="png">
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand nav-image" href="/index.html"><img src="/assets/images/favicon.png" alt="Logo" width="60px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/info.html">Institucional</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item nav-admin d-none">
+                        <a class="nav-link" href="/veterinarios.html">Adm. Veterinarios</a>
+                    </li>
+                    <li class="nav-item nav-admin d-none">
+                        <a class="nav-link" href="/mascotas.html">Adm. Mascotas</a>
+                    </li>
+                    <li class="nav-item nav-admin d-none">
+                        <a class="nav-link" href="/turnos.html">Adm. Turnos</a>
+                    </li>
+                    <li class="nav-item nav-admin d-none">
+                        <a class="nav-link" href="/historia-clinica.html">Historia Clínica</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item" id="navLogin">
+                        <a class="nav-link fw-bold" href="/login.html"><i class="bi bi-person-lock"></i> Login</a>
+                    </li>
+                    <li class="nav-item d-none" id="navLogout">
+                        <a class="nav-link text-danger fw-bold" href="#" id="btnCerrarSesion"><i class="bi bi-box-arrow-right"></i> Cerrar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="maincontainer container seccion-espaciada">
+        
+        <div class="texto-centrado">
+            <h1 class="titulo-seccion">Quiénes somos</h1>
+            <p>En Veterinaria Ojeto creemos que cada mascota merece ser cuidada con amor y profesionalismo. Desde nuestra fundación, acompañamos a las familias en el cuidado de sus animales.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="tarjeta">
+                    <h3>Nuestra historia</h3>
+                    <p>Todo comenzó con la pasión por el bienestar animal. Con los años, fuimos creciendo junto a la comunidad, sumando especialidades sin perder nuestra cercanía.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="tarjeta">
+                    <h3>Nuestro equipo</h3>
+                    <p>Contamos con veterinarios comprometidos con la salud de tu mascota. Nos capacitamos constantemente para ofrecerte lo último en atención veterinaria.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="titulo-seccion texto-centrado">Nuestros valores</h2>
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <div class="tarjeta-valor">
+                    <h4>Amor</h4>
+                    <p>Nos mueve cada día.</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="tarjeta-valor">
+                    <h4>Profesionalismo</h4>
+                    <p>Atención responsable.</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="tarjeta-valor">
+                    <h4>Empatía</h4>
+                    <p>Te acompañamos.</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="tarjeta-valor">
+                    <h4>Confianza</h4>
+                    <p>Comunicación clara.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+        
+    <footer class="footer">
+        <p>
+            Veterinaria OJETO - IDW - FCAD UNER 2026
+        </p>
+    </footer>
+    
+    <script src="js/auth.js"></script>
+    <!-----Boostrap----->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

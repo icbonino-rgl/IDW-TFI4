@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Ojeto</title>
+    <!-----Boostrap----->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <!-----Iconos----->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-----CSS----->
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="png">
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand nav-image" href="/index.html"><img src="/assets/images/favicon.png" alt="Logo" width="60px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/info.html">Institucional</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item nav-admin d-none">
+                        <a class="nav-link" href="/veterinarios.html">Adm. Veterinarios</a>
+                    </li>
+                    <li class="nav-item nav-admin d-none">
+                        <a class="nav-link" href="/mascotas.html">Adm. Mascotas</a>
+                    </li>
+                    <li class="nav-item nav-admin d-none">
+                        <a class="nav-link" href="/turnos.html">Adm. Turnos</a>
+                    </li>
+                    <li class="nav-item nav-admin d-none">
+                        <a class="nav-link" href="/historia-clinica.html">Historia Clínica</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item" id="navLogin">
+                        <a class="nav-link fw-bold" href="/login.html"><i class="bi bi-person-lock"></i> Login</a>
+                    </li>
+                    <li class="nav-item d-none" id="navLogout">
+                        <a class="nav-link text-danger fw-bold" href="#" id="btnCerrarSesion"><i class="bi bi-box-arrow-right"></i> Cerrar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="maincontainer container seccion-espaciada">
+        
+        <div class="texto-centrado">
+            <h1 class="titulo-seccion">Contacto</h1>
+            <p>¿Tu mascota necesita atención o tenés alguna duda? Dejanos tu mensaje y te responderemos a la brevedad.</p>
+        </div>
+
+        <div class="row">
+            <!-- Columna de Datos -->
+            <div class="col-md-5">
+                <div class="caja-datos">
+                    <h3>Nuestros datos</h3>
+                    <p>📍 <strong>Dirección:</strong> Monseñor Tavella 1424, Concordia</p>
+                    <p>📞 <strong>Teléfono:</strong> 0345 423-1400</p>
+                    <p>📧 <strong>Email:</strong> info@veterinariaojeto.com</p>
+                </div>
+            </div>
+
+            <!-- Columna de Formulario -->
+            <div class="col-md-7">
+                <form action="#" method="POST" class="formulario-limpio">
+                    <h3>Envianos un mensaje</h3>
+                    
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" id="nombre" name="nombre" class="input-linea" required>
+
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" class="input-linea" required>
+
+                    <label for="motivo">Motivo de la consulta</label>
+                    <select id="motivo" name="motivo" class="input-linea">
+                        <option value="turno">Reserva de turno</option>
+                        <option value="consulta">Consulta general</option>
+                        <option value="urgencia">Urgencia médica</option>
+                    </select>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="3" class="input-linea" required></textarea>
+
+                    <button type="submit" class="boton-enviar">ENVIAR MENSAJE</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer class="footer">
+        <p>
+            Veterinaria OJETO - IDW - FCAD UNER 2026
+        </p>
+    </footer>
+    
+    <script src="js/auth.js"></script>
+    <!-----Boostrap----->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
