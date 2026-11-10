@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('/assets/fonts/PlusJakartaSans/PlusJakartaSans-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('/assets/fonts/PlusJakartaSans/PlusJakartaSans-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('/assets/fonts/PlusJakartaSans/PlusJakartaSans-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('/assets/fonts/PlusJakartaSans/PlusJakartaSans-ExtraBold.ttf');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('/assets/fonts/PlusJakartaSans/PlusJakartaSans-ExtraBoldItalic.ttf');
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+:root {
+    /* Colores principales */
+    --azul-ojeto: #22425C;
+    --azul-profundo: #1A3348;
+
+    /* Verde / turquesa */
+    --verde-ojeto: #4CA593;
+    --verde-claro: #65B9A7;
+    --verde-suave: #8ACFC0;
+
+    /* Color secundario */
+    --azul-grisaceo: #6B8495;
+
+    /* Fondos */
+    --fondo-claro: #F4F8F7;
+    --blanco: #FFFFFF;
+
+    /* Estados */
+    --verde-hover: #65B9A7;
+    --azul-hover: #1A3348;
+}
+
+.resaltado{
+    color: var(--verde-ojeto);
+}
+
+.main-hero .img-logo{
+    width: 400px;
+}
+.main-hero,
+.maincontainer {
+    flex: 1; /* Obliga al contenido principal a ocupar todo el espacio libre restante */
+}
+
+.navbar a {
+  color: var(--azul-hover) ;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--verde-hover);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.navbar .nav-image:hover {
+  transform: scale(1.1); 
+  opacity: 0.8;          
+  cursor: pointer;       
+  transition: transform 0.4s ease, opacity 0.4 ease;
+}
+/* info y contacto*/
+.seccion-espaciada {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.texto-centrado {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+}
+
+.titulo-seccion {
+    color: var(--azul-ojeto);
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+
+.tarjeta {
+    background-color: var(--fondo-claro);
+    padding: 30px;
+    border-radius: 10px;
+    border-top: 4px solid var(--verde-ojeto);
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.tarjeta-valor {
+    background-color: var(--blanco);
+    border: 1px solid #ddd;
+    padding: 20px 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.tarjeta-valor h4 {
+    color: var(--verde-ojeto);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+
+.caja-datos {
+    background-color: var(--fondo-claro);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.formulario-limpio {
+    background-color: var(--blanco);
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.formulario-limpio label {
+    display: block;
+    font-weight: bold;
+    color: var(--azul-ojeto);
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+
+.input-linea {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    padding: 8px 0;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-linea:focus {
+    border-bottom: 2px solid var(--verde-ojeto);
+}
+
+.boton-enviar {
+    background-color: var(--verde-ojeto);
+    color: var(--blanco);
+    border: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 25px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-enviar:hover {
+    background-color: var(--verde-hover);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--azul-ojeto);
+    color: var(--blanco);
+    align-items: flex-end;
+    padding: 20px 0;
+}
+
+.card-header{
+    background-color: var(--verde-ojeto);
+}
+
+.boton-guardar{ 
+    background-color: var(--azul-ojeto);
+    color: var(--blanco);
+    
+}
+.boton-guardar:hover{
+    background-color: var(--verde-hover);
+}
