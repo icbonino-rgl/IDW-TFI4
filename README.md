@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Integrantes
 - VIllaverde Zarate Branko
 - Zarate Villaverde Ivo
